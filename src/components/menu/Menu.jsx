@@ -29,10 +29,11 @@ const Menu = ({active, setActive}) => {
         <ul onClick={() => setActive(!active)}>
           {menuIcons.map( item => (
           <li key={item.title}>
-            <span className='menu-icons'>
-              <item.icon />
-            </span>
-            <Link to={item.link}>{item.title}</Link>
+            
+            <Link className='menu-link' to={item.link}>
+              <span className='menu-icons'><item.icon /></span>
+              <span className='menu-icons'>{item.title}</span> 
+            </Link>
           </li>
           ))}
         </ul>
