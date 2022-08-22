@@ -1,0 +1,76 @@
+.projects {
+  max-width: 880px;
+  height: 100%;
+  margin: 0 auto;
+  background: url('../../icons/textureMain.png') no-repeat 0 0;
+  background-size: cover;
+  background-color: var(--colors-bg);
+}
+
+.projects-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0 30px 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-container p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.project-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  max-width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px;
+  margin:3px;
+  /* margin-bottom: 10px; */
+  border: 1px solid var(--colors-text);
+  border-top: 7px solid rgb(255, 166, 0);
+}
+
+.project-card-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(255, 145, 0);
+}
+
+.project-card-description {
+  font-size: 12px;
+  /* color: rgb(255, 145, 0); */
+}
+
+
+@media (max-width: 540px) {
+  .projects-container {
+    padding: 0 10px 20px;
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  .projects-container p {
+    font-size: 18px;
+  }
+
+  .project-card-description {
+    font-size: 16px;
+  }
+}
+
+

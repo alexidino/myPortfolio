@@ -1,0 +1,27 @@
+
+.hidden-div {
+  overflow: hidden;
+  width: 50%;
+  height: calc(100vh - 60px);
+  background: url(../../icons/reactIcon.png) no-repeat 50% 50%;
+  background-size: 70%;
+}
+
+.sidedivs {
+  width: 100%;
+  height: 100%;
+  background: url(../../icons/doors.png) no-repeat 50% 50%;
+  background-color: var(--colors-bg);
+}
+
+.sidedivs.active {
+  transform: translateX(-101%);
+  transition: all 1600ms;
+}
+
+@media (max-width: 1366px) {
+  .hidden-div  {
+    display: none;
+  }
+}
+
