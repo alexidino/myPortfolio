@@ -25,7 +25,7 @@ const Main = () => {
         <div className="main-body" >
           <Sidebar />
           <Routes>
-            <Route path='/' element={<MainContent />} />
+            <Route path='' element={<MainContent />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />
           </Routes>

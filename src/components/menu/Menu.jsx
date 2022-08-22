@@ -9,7 +9,7 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 const Menu = ({active, setActive}) => {
 
   const [menuIcons, setMenuIcons] = useState([
-    { title: 'Home', link: '/', icon: HomeOutlinedIcon},
+    { title: 'Home', link: '', icon: HomeOutlinedIcon},
     { title: 'Skills', link: '/skills', icon: LeaderboardOutlinedIcon},
     { title: 'Projects', link: '/projects', icon: WorkOutlineIcon},
   ]);
