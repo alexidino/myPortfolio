@@ -9,7 +9,8 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 const Menu = ({active, setActive}) => {
 
   const [menuIcons, setMenuIcons] = useState([
-    { title: 'Home', link: '', icon: HomeOutlinedIcon},
+    { title: 'Home', link: '/home', icon: HomeOutlinedIcon},
+    { title: 'About', link: '/', icon: HomeOutlinedIcon},
     { title: 'Skills', link: '/skills', icon: LeaderboardOutlinedIcon},
     { title: 'Projects', link: '/projects', icon: WorkOutlineIcon},
   ]);
@@ -29,7 +30,6 @@ const Menu = ({active, setActive}) => {
         <ul onClick={() => setActive(!active)}>
           {menuIcons.map( item => (
           <li key={item.title}>
-            
             <Link className='menu-link' to={item.link}>
               <span className='menu-icons'><item.icon /></span>
               <span className='menu-icons'>{item.title}</span> 
@@ -45,14 +45,3 @@ const Menu = ({active, setActive}) => {
 
 
 export default Menu;
-
-
-
-// {menuIcons.map( item => (
-//   <li>
-//     <span className='menu-icons'>
-//       {item.icon}
-//     </span>
-//     <Link to={item.link}>{item.title}</Link>
-//   </li>
-//   ))};

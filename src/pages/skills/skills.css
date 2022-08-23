@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 880px;
+  height: 100%;
   text-align: start;
   background: url('../../icons/textureMain.png') no-repeat 0 0;
   background-size: cover;

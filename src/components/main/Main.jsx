@@ -8,6 +8,7 @@ import SidedivLeft from '../sidedivs/SidedivLeft';
 import Header from '../header/Header'
 import MainContent from '../mainContent/MainContent';
 import Sidebar from '../sidebar/Sidebar';
+import SidebarMobile from '../sidebar/SidebarMobile';
 import Skills from '../../pages/skills/Skills';
 import Projects from '../../pages/projects/Projects';
 
@@ -25,7 +26,8 @@ const Main = () => {
         <div className="main-body" >
           <Sidebar />
           <Routes>
-            <Route path='' element={<MainContent />} />
+            <Route path='/home' element={<SidebarMobile />} />
+            <Route path='/' element={<MainContent />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />
           </Routes>
