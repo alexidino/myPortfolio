@@ -3,15 +3,11 @@
 }
 
 .main-body {
-  /* height: 100%; */
   min-height: calc(100vh - 60px);
   display: flex;
-/* ---- */
   max-width: 1200px;
   flex-shrink: 0;
-  /* margin: auto; */
   margin: 0 1px;
-  /* border: 1px solid black; */
 }
 
 @media (max-width: 1366px) {
