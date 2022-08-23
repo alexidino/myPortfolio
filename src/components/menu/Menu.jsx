@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './menu.css';
 
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import LeaderboardOutlinedIcon from '@mui/icons-material/LeaderboardOutlined';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
@@ -10,7 +11,7 @@ const Menu = ({active, setActive}) => {
 
   const [menuIcons, setMenuIcons] = useState([
     { title: 'Home', link: '/home', icon: HomeOutlinedIcon},
-    { title: 'About', link: '/', icon: HomeOutlinedIcon},
+    { title: 'About', link: '/', icon: AccountCircleIcon},
     { title: 'Skills', link: '/skills', icon: LeaderboardOutlinedIcon},
     { title: 'Projects', link: '/projects', icon: WorkOutlineIcon},
   ]);
